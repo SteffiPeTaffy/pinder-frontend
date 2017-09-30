@@ -15,7 +15,9 @@ export default class ProjectList extends Component {
         <ProjectListItem
           key={project.id}
           id={project.id}
-          name={project.name}
+          projectName={project.projectName}
+          clientName={project.clientName}
+          location={project.location}
           starred={project.starred}
           {...this.props.actions} />
       )

@@ -21,23 +21,33 @@ const initialState: State = {
   projectsById: [
     {
       id: 0,
-      name: 'Jungheinrich'
+      clientName: 'Jungheinrich',
+      projectName: 'Globus IoT platform H2 2017',
+      location: 'Hamburg'
     },
     {
       id: 1,
-      name: 'Metro'
+      clientName: 'Metro',
+      projectName: 'Globus IoT platform H2 2017',
+      location: 'Düsseldorf'
     },
     {
       id: 2,
-      name: 'Fresh Energy'
+      clientName: 'Fresh Energy',
+      projectName: 'Globus IoT platform H2 2017',
+      location: 'Berlin'
     },
     {
       id: 3,
-      name: 'Daimler'
+      clientName: 'Daimler',
+      projectName: 'Globus IoT platform H2 2017',
+      location: 'Berlin'
     },
     {
       id: 4,
-      name: 'Immobilien Scount'
+      clientName: 'Immobilien Scount',
+      projectName: 'Globus IoT platform H2 2017',
+      location: 'Berlin'
     }
   ]
 };

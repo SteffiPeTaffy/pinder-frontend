@@ -1,22 +1,25 @@
 .header-container {
-    background-color: #FF6B6B;
+  background-color: #FF6B6B;
+  display: flex;
+  justify-content: flex-start;
+
+  .header {
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    height: 60px;
     display: flex;
     justify-content: flex-start;
 
-    .header {
-        height: 60px;
-        display: flex;
-        justify-content: flex-start;
-
-        p {
-            font-size: 28px;
-            margin: auto 15px;
-            font-weight: 200;
-            color: white;
-        }
+    p {
+      font-size: 28px;
+      margin: auto 15px;
+      font-weight: 200;
+      color: white;
     }
+  }
 
-    .logo {
-        width: 25px;
-    }
+  .logo {
+    width: 25px;
+  }
 }

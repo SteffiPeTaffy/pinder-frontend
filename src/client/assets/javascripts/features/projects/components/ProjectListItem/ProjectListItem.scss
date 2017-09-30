@@ -1,6 +1,6 @@
 .projectListItem {
   list-style: none;
-  padding: 20px 10px 20px 60px;
+  padding: 40px 10px 40px 0;
   background-color: white;
   border-bottom: 1px solid #E3E3E3;
   display: flex;
@@ -8,10 +8,21 @@
 
 .projectInfos {
   flex: 1 0 auto;
-}
 
-.projectInfos span {
-  font-weight: bold;
+  .projectInfos-clientName {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .projectInfos-projectName {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .projectInfos-location {
+    font-weight: 200;
+    font-size: 14px;
+  }
 }
 
 .projectActions {
