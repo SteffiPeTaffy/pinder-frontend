@@ -1,3 +1,5 @@
+@import "../../../../../styles/colors";
+
 .projectListItem {
   list-style: none;
   padding: 40px 10px 40px 0;
@@ -29,11 +31,28 @@
   flex: 0 0 90px;
 }
 
-.btnAction, .btnAction:active, .btnAction:focus, .btnAction:hover {
-  margin-right: 5px;
-  color: #5C75B0;
+.btnAction {
+  width: 45px;
+  height: 45px;
+  border-radius: 45px;
+  border-color: $red;
+  border-width: 2px;
+  background-color: transparent;
+  border-style: solid;
 }
 
-button:focus {
-  outline: 0 !important;
+.btnAction-dislike {
+  &:hover {
+    background-color: lighten($red, 10%);
+    border-color: lighten($red, 10%);
+
+    i {
+      color: $white;
+    }
+  }
+
+  i {
+    color: $red;
+  }
 }
+

@@ -18,8 +18,8 @@ export default class ProjectListItem extends Component {
     return (
       <li className="projectListItem">
         <span className="projectActions">
-          <button className="btn btn-default btnAction" onClick={() => this.props.starProject(this.props.id)}>
-            <i className={classnames('fa', { 'fa-star': this.props.starred }, { 'fa-star-o': !this.props.starred })} />
+          <button className="btnAction btnAction-dislike" onClick={() => this.props.starProject(this.props.id)}>
+            <i className="fa fa-remove"/>
           </button>
         </span>
         <div className="projectInfos">

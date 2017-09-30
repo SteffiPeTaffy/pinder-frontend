@@ -1,5 +1,7 @@
+@import "../../../styles/colors";
+
 .header-container {
-  background-color: #FF6B6B;
+  background-color: $red;
   display: flex;
   justify-content: flex-start;
 

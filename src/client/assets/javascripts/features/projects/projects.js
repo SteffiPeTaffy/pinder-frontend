@@ -86,7 +86,6 @@ function starProject(id: number) {
 }
 
 // Selectors
-
 const projects = (state) => state[NAME];
 
 export const selector = createStructuredSelector({
