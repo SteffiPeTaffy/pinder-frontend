@@ -18,7 +18,7 @@ export default class ProjectList extends Component {
           projectName={project.projectName}
           clientName={project.clientName}
           location={project.location}
-          starred={project.starred}
+          rated={project.rated}
           {...this.props.actions} />
       )
     );

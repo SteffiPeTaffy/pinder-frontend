@@ -3,6 +3,11 @@ body {
   padding: 0;
   font-family: "Open Sans", sans-serif;
 }
+
 h1 {
   font-weight: 100;
+}
+
+button:focus {
+  outline: 0 !important;
 }

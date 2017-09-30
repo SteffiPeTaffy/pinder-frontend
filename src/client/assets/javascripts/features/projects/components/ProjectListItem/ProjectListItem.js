@@ -10,16 +10,19 @@ export default class ProjectListItem extends Component {
     clientName: PropTypes.string.isRequired,
     projectName: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,
-    starProject: PropTypes.func.isRequired,
-    starred: PropTypes.bool
+    rateProject: PropTypes.func.isRequired,
+    rated: PropTypes.string
   };
 
   render() {
     return (
       <li className="projectListItem">
         <span className="projectActions">
-          <button className="btnAction btnAction-dislike" onClick={() => this.props.starProject(this.props.id)}>
-            <i className="fa fa-remove"/>
+          <button className={classnames('btnAction btnAction-dislike', { 'active': this.props.rated === 'DISLIKE' })} onClick={() => this.props.rateProject(this.props.id, 'DISLIKE')}>
+            <i className="fa fa-remove" />
+          </button>
+          <button className={classnames('btnAction btnAction-like', { 'active': this.props.rated === 'LIKE' })} onClick={() => this.props.rateProject(this.props.id, 'LIKE')}>
+            <i className="fa fa-check"/>
           </button>
         </span>
         <div className="projectInfos">

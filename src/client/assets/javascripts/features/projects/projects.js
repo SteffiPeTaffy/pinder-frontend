@@ -8,10 +8,9 @@ import { State } from 'models/projects';
 // Action Types
 
 // Define types in the form of 'npm-module-or-myapp/feature-name/ACTION_TYPE_NAME'
-const STAR_PROJECT = 'redux-app/projects/STAR_PROJECT';
+const RATE_PROJECT = 'redux-app/projects/RATE_PROJECT';
 
 // This will be used in our root reducer and selectors
-
 export const NAME = 'projects';
 
 // Define the initial state for `projects` module
@@ -56,7 +55,7 @@ const initialState: State = {
 
 export default function reducer(state: State = initialState, action: any = {}): State {
   switch (action.type) {
-    case STAR_PROJECT:
+    case RATE_PROJECT:
       return {
         ...state,
         projectsById: state.projectsById.map((project) => {
@@ -65,7 +64,7 @@ export default function reducer(state: State = initialState, action: any = {}): 
           }
 
           return assign({}, project, {
-            starred: !project.starred
+            rated: action.rating
           });
         })
       };
@@ -78,12 +77,14 @@ export default function reducer(state: State = initialState, action: any = {}): 
 
 // Action Creators
 
-function starProject(id: number) {
+function rateProject(id: number, rating: string) {
   return {
-    type: STAR_PROJECT,
-    id
+    type: RATE_PROJECT,
+    id,
+    rating
   };
 }
+
 
 // Selectors
 const projects = (state) => state[NAME];
@@ -93,5 +94,5 @@ export const selector = createStructuredSelector({
 });
 
 export const actionCreators = {
-  starProject
+  rateProject
 };
