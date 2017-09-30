@@ -17,26 +17,11 @@ import { SENTRY_URL } from './config';
 window.Raven && Raven.config(SENTRY_URL).install();
 
 const Root = ({ store, history }) => {
-  let ComponentEl = (
+  return (
     <Provider store={store}>
       <Router history={history} routes={routes} />
     </Provider>
   );
-
-  if (process.env.NODE_ENV !== 'production') {
-    const DevTools = require('./DevTools').default;
-
-    ComponentEl = (
-      <Provider store={store}>
-        <div>
-          <Router history={history} routes={routes} />
-          {!window.devToolsExtension ? <DevTools /> : null}
-        </div>
-      </Provider>
-    );
-  }
-
-  return ComponentEl;
 };
 
 Root.propTypes = {

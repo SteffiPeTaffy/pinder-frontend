@@ -1,10 +1,10 @@
-type FriendById = {
+type ProjectById = {
   id?: number,
   name: string
 };
 
 // This is the model of our module state
 export type State = {
-  friends: number[],
-  friendsById: Array<FriendById>
+  projects: number[],
+  projectsById: Array<ProjectById>
 };

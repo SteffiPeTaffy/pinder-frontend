@@ -1,8 +1,8 @@
 {
-  "name": "redux-webpack-es6-boilerplate",
-  "description": "A starter project for modern React apps with Redux",
-  "version": "1.1.1",
-  "author": "Nick S. Plekhanov <nickatgit@yandex.com>",
+  "name": "pinder-frontend",
+  "description": "Pinder - a tinder for projects",
+  "version": "0.0.1",
+  "author": "Stefanie Grewenig",
   "license": "MIT",
   "keywords": [
     "react",
@@ -21,9 +21,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/nicksp/redux-webpack-es6-boilerplate.git"
+    "url": "git@github.com:SteffiPeTaffy/pinder-frontend.git"
   },
-  "bugs": "https://github.com/nicksp/redux-webpack-es6-boilerplate/issues",
   "scripts": {
     "clean:build": "rimraf build",
     "build:html": "node ./bin/buildHtml.js",

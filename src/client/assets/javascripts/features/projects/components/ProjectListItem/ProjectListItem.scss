@@ -1,29 +1,20 @@
-@font-face {
-  font-family: "open_sansregular";
-  src: url("./fonts/opensans-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-.friendListItem {
+.projectListItem {
   list-style: none;
-  background: url(./images/icon-user.png) no-repeat left 10px top 10px;
-  font-family: "open_sansregular", Arial;
   padding: 20px 10px 20px 60px;
   background-color: white;
   border-bottom: 1px solid #E3E3E3;
   display: flex;
 }
 
-.friendInfos {
+.projectInfos {
   flex: 1 0 auto;
 }
 
-.friendInfos span {
+.projectInfos span {
   font-weight: bold;
 }
 
-.friendActions {
+.projectActions {
   flex: 0 0 90px;
 }
 
